@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert a Team</title> <!-- Page title -->
+</head>
+<body>
+
+<h2>Team Insert</h2> <!-- Heading for the form -->
+
+<!-- HTML form to input team details and submit to the TeamAdd servlet -->
+<form action="TeamAdd" method="post">
+    <!-- Input for the team ID -->
+    <p>
+        <label for="teamId">Team ID:</label>
+        <input id="teamId" type="number" name="teamId" required> <!-- Required field -->
+    </p>
+    
+    <!-- Input for the city name -->
+    <p>
+        <label for="city">City:</label>
+        <input id="city" type="text" name="city" required> <!-- Required field -->
+    </p>
+    
+    <!-- Input for the team name -->
+    <p>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" required> <!-- Required field -->
+    </p>
+    
+    <!-- Submit button to send the form data -->
+    <p>
+        <input id="addTeam" type="submit" value="Add Team">
+    </p>
+</form>
+
+</body>
+</html>
